@@ -13,6 +13,6 @@ $parola = $_GET['parola'];
 </head>
 <body>
     <p><?php echo $paragrafo; ?></p>
-    <p><?php echo $parola; ?></p>
+    <p><?php echo strlen($paragrafo); ?></p>
 </body>
 </html>
