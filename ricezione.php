@@ -1,9 +1,18 @@
 <?php
-$paragrafo = $_GET['paragrafo'];
-$parola = $_GET['parola'];
-$lungparag = strlen($paragrafo);
-$replace = str_replace($parola,"***",$paragrafo);
-$lungnuovo = strlen($replace);
+// $paragrafo = $_GET['paragrafo'];
+// $parola = $_GET['parola'];
+// $lungparag = strlen($paragrafo);
+// $replace = str_replace($parola,"***",$paragrafo);
+// $lungnuovo = strlen($replace);
+
+if(isset($_GET['paragrafo']) && $_GET['paragrafo'] != ''){
+    $paragrafo = $_GET['paragrafo'];
+    $lungparag = strlen($paragrafo);
+}else{
+    $paragrafo = 'Inserisci un testo per favore';
+    $lungparag = '';
+} 
+
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +24,7 @@ $lungnuovo = strlen($replace);
     <title>Ricezione Form</title>
 </head>
 <body>
-    <p><?php echo "$paragrafo,  $lungparag" ?></p>
-    <p><?php echo "$replace, $lungnuovo" ?></p>
+    <p><?php echo "$paragrafo $lungparag" ?></p>
+    
 </body>
 </html>
