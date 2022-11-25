@@ -12,11 +12,12 @@ if(isset($_GET['paragrafo']) && $_GET['paragrafo'] != ''){
     $paragrafo = 'Inserisci un testo per favore';
     $lungparag = '';
 } 
+
 if(isset($_GET['parola']) && $_GET['parola'] != '' && $_GET['paragrafo'] != ''){
     $parola = $_GET['parola'];
     $replace = str_replace($parola,"***",$paragrafo);
     $lungnuovo = strlen($replace);
-}else if (isset($_GET['parola']) && $_GET['parola'] != '' && $_GET['paragrafo'] = ''){
+}else if (isset($_GET['parola']) && $_GET['parola'] != '' && $_GET['paragrafo'] == ''){
     $paragrafo = 'Inserisci un testo per favore';
     $parola = $_GET['parola'];
     $replace = '';
@@ -25,6 +26,7 @@ if(isset($_GET['parola']) && $_GET['parola'] != '' && $_GET['paragrafo'] != ''){
     $replace = 'Inserisci una parola per favore';
     $lungnuovo = '';
 } 
+
 
 ?>
 
