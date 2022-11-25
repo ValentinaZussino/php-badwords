@@ -17,7 +17,5 @@ $lungnuovo = strlen($replace);
 <body>
     <p><?php echo "$paragrafo,  $lungparag" ?></p>
     <p><?php echo "$replace, $lungnuovo" ?></p>
-    
-    <!-- echo str_replace("world","Peter","Hello world!"); -->
 </body>
 </html>
