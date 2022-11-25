@@ -1,6 +1,8 @@
 <?php
 $paragrafo = $_GET['paragrafo'];
 $parola = $_GET['parola'];
+$lungparg = strlen($paragrafo);
+$replace = str_replace($parola,"***",$paragrafo);
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +14,9 @@ $parola = $_GET['parola'];
     <title>Ricezione Form</title>
 </head>
 <body>
-    <p><?php echo $paragrafo; ?></p>
-    <p><?php echo strlen($paragrafo); ?></p>
+    <p><?php echo "$paragrafo,  $lungparg"; ?></p>
+    <p><?php echo $replace; ?></p>
+    
+    <!-- echo str_replace("world","Peter","Hello world!"); -->
 </body>
 </html>
