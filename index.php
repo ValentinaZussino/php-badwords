@@ -11,7 +11,8 @@
 <body>
     <h1>Form php</h1>
     <form action="ricezione.php" method="GET">
-        <input type="text" name="paragrafo" placeholder="Immetti un testo">
+        <!-- <input type="text" name="paragrafo" placeholder="Immetti un testo"> -->
+        <textarea name="paragrafo" id="" cols="30" rows="10" placeholder="Immetti un testo"></textarea>
         <input type="text" name="parola" placeholder="Parola da censurare">
         <button type="submit">Invia</button>
     </form>
